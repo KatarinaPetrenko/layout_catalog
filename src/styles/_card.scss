@@ -13,6 +13,15 @@
     height: 134px;
     padding-top: 15px;
     margin: 0 auto 45px;
+
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      border: 3px solid #f3f3f3;
+      border-radius: $borderRadiusSmall;
+      cursor: pointer;
+    }
   }
 
   &__description {
@@ -57,10 +66,14 @@
     line-height: 40px;
     text-transform: uppercase;
 
+    transition: background-color 0.5s,
+      color 0.5s;
+
     &:hover {
       background-color: $colorOfButton;
       color: $colorOfLinks;
       border: 1px solid $colorOfLinks;
+      cursor: pointer;
     }
   }
 }

@@ -22,8 +22,11 @@
     color: $colorOfText;
     text-decoration: none;
 
+    transition: color 0.5s;
+
     &:hover {
       color: $colorOfLinks;
+      cursor: pointer;
     }
   }
 
